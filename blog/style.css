@@ -1,0 +1,239 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  font-size: 14px;
+  min-height: 100vh;
+}
+p {
+  margin: 0;
+}
+.hide {
+  display: none;
+}
+.error {
+  color: red;
+}
+.nav {
+  height: 80px;
+  background: #fff;
+  font-size: 0;
+}
+#todd {
+  margin: auto;
+  width: 60%;
+  display: block;
+  margin-top: 40px;
+}
+
+/* index.php & post.php */
+.wrapper {
+  max-width: 1720px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  line-height: 80px;
+  justify-content: space-between;
+}
+.nav__sitename {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav__navbar a, .nav__navbar--admin a {
+  text-decoration: none;
+  color: #787878;
+  margin: 0 8px;
+  font-size: 1rem;
+}
+.nav__navbar a:hover, .nav__navbar--admin a:hover {
+  color: black;
+}
+.nav__navbar {
+  display: inline-block;
+}
+.nav__navbar--admin {
+  display: inline-block;
+}
+
+.banner {
+  background-image: linear-gradient(to top, #000000, #434343);
+  height: 240px;
+  width: 100%;
+  color: #eee;
+  position: relative;
+}
+.title-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.posts, .post, .list {
+  background: #fff;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 60px;
+  padding: 10px;
+}
+.posts__card, .post__card {
+  border: 1px solid #9a9a9a;
+  padding: 26px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.posts__card {
+  height: 260px;
+  overflow: hidden;
+}
+.posts__card__title, .post__card__title, .list__card__title {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.posts__card__info, .post__card__info {
+  background: #eee;
+  color: #8f8f8f;
+  font-size: 1rem;
+  margin: 10px auto 10px;
+  padding: 10px;
+}
+.posts__card__content__wrapper {
+  height: 140px;
+  overflow: hidden;
+}
+.posts__card__content, .post__card__content {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1rem;
+  white-space: pre-line;
+}
+.posts__card__edit-btn {
+  text-decoration: none;
+  color: #a8a8a8;
+  border: 1px solid #a8a8a8;
+  padding: 5px 10px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.posts__card__more-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+.posts__card__more-btn a {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #737373;
+  padding: 8px 16px;
+}
+.page {
+  position: absolute;
+  bottom: 36px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #737373;
+}
+.page__info {
+  margin-bottom: 14px;
+}
+.page__paginator a {
+  text-decoration: none;
+  color: #737373;
+  border: 1px solid #9a9a9a;
+  padding: 6px 12px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  background: #323232;
+  color: #fefefe;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* edit.php*/
+.ck-editor__editable_inline {
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+.editor {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  position: relative;
+  bottom: 60px;
+  background: #fff;
+}
+.editor__form {
+  border: 1px solid #9a9a9a;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.editor__form input[name=title] {
+  display: block;
+  width: 90%;
+  padding: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #d7d7d7;
+}
+.editor__form input[name=title]::placeholder {
+  color: #000;
+}
+.editor__form__title {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.editor__form textarea {
+  white-space: pre-line;
+}
+.editor__form input[type=submit] {
+  padding: 10px 20px;
+  border: 1px solid #737373;
+  background: #fff;
+  align-self: flex-end;
+}
+.editor__form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+/* admin.php & postlist.php */
+.list__card {
+  border-bottom: 1px solid #9a9a9a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list__card__info__time {
+  color: #8a8a8a;
+  margin-right: 10px;
+}
+.list__card__info a {
+  text-decoration: none;
+  color: #a8a8a8;
+  border: 1px solid #a8a8a8;
+  padding: 4px 6px;
+  margin-right: 4px;
+  transition: all 0.2s;
+}
+.list__card__info a:hover {
+  color: #fff;
+  background: #a8a8a8;
+}

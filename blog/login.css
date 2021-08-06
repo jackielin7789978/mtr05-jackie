@@ -1,0 +1,48 @@
+body {
+  background: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  font-size: 14px;
+}
+.error {
+  color: red;
+}
+.card {
+  border: 1px solid #000;
+  width: 100%;
+  max-width: 480px;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+}
+.card__title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 60px 0px;
+}
+.card__login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__login-form input {
+  margin: 20px 0px;
+  width: 360px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  font-size: 1rem;
+}
+.card__login-form input[type=submit] {
+  margin-bottom: 60px;
+  border: none;
+  color: #fffefe;
+  padding: 14px 0px;
+  background-image: linear-gradient(to top, #000000, #434343);
+}
+.card__login-form input[type=submit]:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to top, #000000e7, #434343ea);
+}
