@@ -1,6 +1,6 @@
 <?php
   $lifetime = 3600;
-  $path = "/mtr05-jackie/blog/";
+  $path = "/blog";
   session_set_cookie_params($lifetime, $path);
   session_start();
   require_once("conn.php");
